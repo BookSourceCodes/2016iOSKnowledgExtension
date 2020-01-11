@@ -1,5 +1,6 @@
 2016iOS教程之知识扩展视频源代码
 
 Day01
-    01. SinglePositioning                                   ---> 一次定位
+    01. SinglePositioning                                   ===> 一次定位
+    02. Continuous positioning                              ===> 连续定位
     
