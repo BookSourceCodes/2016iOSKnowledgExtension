@@ -6,4 +6,5 @@ Day01
     03. CLLocationIntroduction                              ===> CLLocation对象介绍
     04. Authorization                                       ===> 用户授权介绍
     05. Geocoding                                           ===> 地理编码和反地理编码
-    06. MapView                                             ===> 
+    06. MapView                                             ===> MapView的使用
+    07. AddPin                                              ===> 添加大头针

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="6qw-0e-WJJ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </mapView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="aWr-Oj-jcE">
+                                <rect key="frame" x="6" y="104" width="402" height="32"/>
+                                <segments>
+                                    <segment title="标准"/>
+                                    <segment title="卫星"/>
+                                    <segment title="混合"/>
+                                    <segment title="标准楼层"/>
+                                    <segment title="混合楼层"/>
+                                    <segment title="综合"/>
+                                </segments>
+                                <connections>
+                                    <action selector="mapTypeChangeClick:" destination="BYZ-38-t0r" eventType="valueChanged" id="6E4-lb-WdK"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aq-G0-aQo">
+                                <rect key="frame" x="28" y="189" width="31" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="31" id="U3s-cr-gRe"/>
+                                    <constraint firstAttribute="height" constant="30" id="jf5-qF-PC0"/>
+                                </constraints>
+                                <state key="normal" title="定位"/>
+                                <connections>
+                                    <action selector="backUserLocationClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3yr-N6-Fgt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lY6-74-Jov">
+                                <rect key="frame" x="12.5" y="293" width="62" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="XBk-ko-isn"/>
+                                    <constraint firstAttribute="height" constant="30" id="iJk-3w-DuE"/>
+                                </constraints>
+                                <state key="normal" title="缩小地图"/>
+                                <connections>
+                                    <action selector="zoomOutClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zwH-1Y-FKP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJp-c1-9mv">
+                                <rect key="frame" x="12.5" y="239" width="62" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FhW-sT-tZj"/>
+                                    <constraint firstAttribute="width" constant="62" id="Olj-mX-DH4"/>
+                                </constraints>
+                                <state key="normal" title="放大地图"/>
+                                <connections>
+                                    <action selector="zoomInClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3dH-1s-3Op"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lY6-74-Jov" firstAttribute="centerX" secondItem="dJp-c1-9mv" secondAttribute="centerX" id="2i7-ff-28c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aWr-Oj-jcE" secondAttribute="trailing" constant="6" id="2uN-EI-Tt3"/>
+                            <constraint firstItem="dJp-c1-9mv" firstAttribute="top" secondItem="9aq-G0-aQo" secondAttribute="bottom" constant="20" id="91J-UR-efM"/>
+                            <constraint firstItem="aWr-Oj-jcE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="6" id="D0Q-aw-5RF"/>
+                            <constraint firstItem="6qw-0e-WJJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="IAM-Ga-7Mt"/>
+                            <constraint firstItem="9aq-G0-aQo" firstAttribute="top" secondItem="aWr-Oj-jcE" secondAttribute="bottom" constant="54" id="S9j-r9-xID"/>
+                            <constraint firstItem="6qw-0e-WJJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Xuz-PK-sSp"/>
+                            <constraint firstItem="lY6-74-Jov" firstAttribute="top" secondItem="dJp-c1-9mv" secondAttribute="bottom" constant="24" id="caf-5s-VJD"/>
+                            <constraint firstAttribute="bottom" secondItem="6qw-0e-WJJ" secondAttribute="bottom" id="djj-aQ-obM"/>
+                            <constraint firstItem="dJp-c1-9mv" firstAttribute="centerX" secondItem="9aq-G0-aQo" secondAttribute="centerX" id="kCg-G6-xm9"/>
+                            <constraint firstItem="9aq-G0-aQo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="lS0-1N-qz4"/>
+                            <constraint firstItem="aWr-Oj-jcE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="qJX-1n-Whq"/>
+                            <constraint firstItem="6qw-0e-WJJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qnz-46-hRh"/>
+                            <constraint firstItem="aWr-Oj-jcE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yg5-Ji-HCF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="6qw-0e-WJJ" id="yAn-vB-les"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
+        </scene>
+    </scenes>
+</document>
