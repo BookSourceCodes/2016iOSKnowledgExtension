@@ -41,8 +41,19 @@
         [self.mgr requestWhenInUseAuthorization];
         
         // 永久授权，不论程序有没有在主界面运行，都会授权
-        [self.mgr requestAlwaysAuthorization];
+//        [self.mgr requestAlwaysAuthorization];
     }
+    
+/*
+ iOS9新特性 --> 临时获取后台定位权限
+ */
+
+// allowsBackgroundLocationUpdates 如果实现了此方法，还需要配置plist列表
+
+// 一定注意实配版本，要加iOS9判断
+if ([UIDevice currentDevice].systemVersion.floatValue  >= 9.0) {
+    self.mgr.allowsBackgroundLocationUpdates = YES;
+}
     
     // 3. 设置代理 --> 获取用户位置
     self.mgr.delegate = self;
@@ -57,7 +68,7 @@
 /* 当完成位置更新的时候调用 --> 此方法会频繁调用 */
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations {
     CLLocation *location = [locations lastObject];
-    [self.mgr stopUpdatingLocation];
+//    [self.mgr stopUpdatingLocation];
     NSLog(@"location: %@", location);
     /*
      SinglePositioning[12532:709663] location: <+37.78583400,-122.40641700> +/- 5.00m (speed -1.00 mps / course -1.00) @ 1/11/20, 7:46:43 PM China Standard Time
