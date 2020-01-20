@@ -8,3 +8,4 @@ Day01
     05. Geocoding                                           ===> 地理编码和反地理编码
     06. MapView                                             ===> MapView的使用
     07. AddPin                                              ===> 添加大头针
+    08. CustomPin                                           ===> 自定义大头针
