@@ -9,3 +9,6 @@ Day01
     06. MapView                                             ===> MapView的使用
     07. AddPin                                              ===> 添加大头针
     08. CustomPin                                           ===> 自定义大头针
+
+Day02
+    01. MapNavigation                                       ===> 地图导航
