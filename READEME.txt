@@ -18,4 +18,6 @@ Day10
     01. UseProximity                                        ===> 使用距离传感器
     02. UsePushAccelerometer                                ===> Push方式使用加速计传感器
     03. UsePullAccelerometer                                ===> Pull方式使用加速计传感器
-    04. UsePushGyro                                         ===> Push方式使用加速计传感器
+    04. UsePushGyro                                         ===> Push方式使用陀螺仪
+    05. UsePullGyro                                         ===> Pull方式使用陀螺仪
+    06. BallMovement                                        ===> 小球根据传感器移动
