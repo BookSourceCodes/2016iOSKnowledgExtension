@@ -21,3 +21,4 @@ Day10
     04. UsePushGyro                                         ===> Push方式使用陀螺仪
     05. UsePullGyro                                         ===> Pull方式使用陀螺仪
     06. BallMovement                                        ===> 小球根据传感器移动
+    07. shake                                               ===> 实现摇一摇功能
