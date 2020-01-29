@@ -24,4 +24,4 @@ Day10
     07. shake                                               ===> 实现摇一摇功能
     08. StepCounting                                        ===> 使用计步传感器
     09. GameKitBT                                           ===> 使用GameKit实现蓝牙通信
-    
+    10. CoreBluetoothBT                                     ===> 使用CoreBluetooth实现蓝牙通信
