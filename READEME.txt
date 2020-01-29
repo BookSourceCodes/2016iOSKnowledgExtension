@@ -22,3 +22,4 @@ Day10
     05. UsePullGyro                                         ===> Pull方式使用陀螺仪
     06. BallMovement                                        ===> 小球根据传感器移动
     07. shake                                               ===> 实现摇一摇功能
+    08. StepCounting                                        ===> 使用计步传感器
