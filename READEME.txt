@@ -27,4 +27,4 @@ Day10
     10. CoreBluetoothBT                                     ===> 使用CoreBluetooth实现蓝牙通信
 
 Day11
-    01. 
+    01. PlaySound                                           ===> 播放音效
