@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axf-FD-HbM">
-                                <rect key="frame" x="148.5" y="312" width="117" height="30"/>
+                                <rect key="frame" x="148.5" y="124" width="117" height="30"/>
                                 <state key="normal" title="播放视频-带View"/>
                                 <connections>
                                     <action selector="moviePlayerViewController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bY8-uO-mOM"/>
@@ -25,7 +25,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="axf-FD-HbM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="268" id="Jws-hR-wEF"/>
+                            <constraint firstItem="axf-FD-HbM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="Jws-hR-wEF"/>
                             <constraint firstItem="axf-FD-HbM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mD4-EC-Ubp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
