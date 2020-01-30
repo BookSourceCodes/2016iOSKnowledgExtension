@@ -32,4 +32,5 @@ Day11
     03. PlayMusic                                           ===> 播放音乐
     04. RecordSound                                         ===> 录音
     05. PlayVideoWithView                                   ===> 带View播放视频
+    06. VideoScreenshot                                     ===> 视频截图
     
