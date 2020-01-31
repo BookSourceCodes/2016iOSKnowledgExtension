@@ -35,5 +35,5 @@ Day11
     06. VideoScreenshot                                     ===> 视频截图
     07. RecordVideo                                         ===> 录制视频
     08. VideoCompression                                    ===> 视频压缩
-    
+    09. UITest                                              ===> UITest使用
 
