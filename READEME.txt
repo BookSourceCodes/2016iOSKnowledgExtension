@@ -14,6 +14,9 @@ Day02
     01. MapNavigation                                       ===> 地图导航
     02. MapLine                                             ===> 地图画线
 
+Day09
+    01. FingerprintRecognition                              ===> 指纹识别
+
 Day10
     01. UseProximity                                        ===> 使用距离传感器
     02. UsePushAccelerometer                                ===> Push方式使用加速计传感器
